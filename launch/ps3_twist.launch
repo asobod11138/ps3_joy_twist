@@ -1,0 +1,6 @@
+<launch>
+  <node name="joy_node" pkg="joy" type="joy_node" />
+  <node name="ps3_joy_twist_node" pkg="ps3_joy_twist" type="ps3_joy_twist_node">
+    <remap from="cmd_vel" to="unitychan/twist"/>
+  </node>
+</launch>
